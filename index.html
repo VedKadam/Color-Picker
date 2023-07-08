@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+
+	*{font-size: 30px;}
+	body{background-color: azure;}
+</style>
+
+</head>
+<body>
+<center>
+
+	<h1> Holi Hain </h1>
+	<form onsubmit="colorme()">
+	<input type="submit" valu="mohe rang de" />
+
+	</form>
+	<script>
+		function colorme(){
+			event.preventDefault();
+			let colors = ["red", "blue", "green", "pink", "grey", "black", "purple"];
+			let r = parseInt(Math.random() * colors.length);
+			document.body.style.background = colors[r];
+
+		}
+	</script>
+
+</body>
+</center>
+</html>
